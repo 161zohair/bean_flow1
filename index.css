@@ -1,0 +1,105 @@
+/* General body styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #2C3E50;
+    background-image: url('../image/indexpic.jpg'); /* Background image */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Full viewport height */
+    overflow: hidden; /* Prevent scrolling */
+}
+
+/* Landing page container */
+.landing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 20px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+/* Project name styling with a subtle boundary box */
+.project-name {
+    font-size: 3rem;
+    color: #FFFFFF; /* White text color */
+    font-weight: bold;
+    margin: 0;
+    padding: 8px 16px; /* Padding for boundary box */
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent black background for boundary */
+    border-radius: 5px; /* Rounded corners for the boundary */
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7); /* Extra text shadow for readability */
+}
+
+/* Tagline styling with background and text shadow */
+.tagline {
+    font-size: 1.4rem;
+    color: #F0F0F0;
+    margin: 10px 0 20px;
+    padding: 5px 12px; /* Padding for boundary box */
+    background: rgba(0, 0, 0, 0.35); /* Semi-transparent black background */
+    border-radius: 5px;
+    text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.5);
+}
+
+/* Button group styling */
+.button-group {
+    display: flex;
+    gap: 20px;
+}
+
+/* Button styles */
+.btn {
+    background: #406882;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: linear-gradient(135deg, #6497B1, #A7C5EB); /* Lighter gradient on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .project-name {
+        font-size: 2.5rem;
+    }
+    
+    .tagline {
+        font-size: 1.2rem;
+    }
+
+    .button-group {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .project-name {
+        font-size: 2rem;
+    }
+    
+    .tagline {
+        font-size: 1rem;
+    }
+
+    .btn {
+        padding: 8px 18px;
+        font-size: 0.9rem;
+    }
+}

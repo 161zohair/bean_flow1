@@ -1,0 +1,115 @@
+/* General body styles */
+body {
+    margin: 0;
+    color: #2C3E50;
+    background-image: url('../image/picture.jpg');
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif;
+}
+
+/* Signup container styles */
+.signup-container {
+    background: rgba(240, 248, 255, 0.8);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 360px;
+    margin: 40px auto;
+    z-index: 1;
+}
+
+/* Heading Styles */
+.signup-container h1 {
+    color: #1A374D;
+    font-size: 2rem;
+    margin-bottom: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Input and Select Styles */
+.signup-container input,
+.signup-container select {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #B0C4DE;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: rgba(230, 241, 245, 0.9);
+}
+
+/* Button Styles */
+.signup-container button {
+    background-color: #406882;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+/* Hover effects for buttons */
+.signup-container button:hover {
+    background: linear-gradient(135deg, #6497B1, #A7C5EB);
+}
+
+/* Style for the link to login */
+.signup-container p {
+    margin-top: 15px;
+    color: #2C3E50;
+    text-align: center;
+}
+
+.signup-container a {
+    color: #406882;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.signup-container a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .signup-container {
+        width: 80%; /* Adjust width for tablets */
+        padding: 20px;
+    }
+
+    .signup-container h1 {
+        font-size: 1.8rem; /* Slightly smaller font for tablets */
+    }
+
+    .signup-container button {
+        font-size: 1rem; /* Keep button font consistent */
+    }
+}
+
+@media (max-width: 480px) {
+    .signup-container {
+        width: 90%; /* Adjust width for mobile */
+        padding: 15px;
+    }
+
+    .signup-container h1 {
+        font-size: 1.6rem; /* Reduce font size for mobile */
+    }
+
+    .signup-container input,
+    .signup-container select {
+        font-size: 0.9rem; /* Slightly smaller input font */
+    }
+
+    .signup-container button {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+}

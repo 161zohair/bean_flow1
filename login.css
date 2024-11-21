@@ -1,0 +1,82 @@
+/* Styles for Login Page */
+body {
+    margin: 0;
+    color: #2C3E50; /* Warm blue-gray for text */
+    background-image: url('../image/picture.jpg'); /* Background suited for a cafe */
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+    font-family: Arial, sans-serif; /* Clean font for readability */
+}
+
+/* Login container styles */
+#login-page {
+    display: flex; /* Center the container */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+}
+
+.login-container {
+    background: rgba(240, 248, 255, 0.95); /* Light warm blue background */
+    padding: 30px;
+    border-radius: 10px; /* Softer rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    width: 380px;
+    z-index: 1; /* Ensure form is above background */
+}
+
+.login-container h2 {
+    color: #1A374D; /* Deep, warm blue */
+    font-size: 2.4rem;
+    margin-bottom: 12px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Input Styles */
+.login-container input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* Space between inputs */
+    border: 1px solid #B0C4DE; /* Light blue-gray border */
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #E6F1F5; /* Soft blue background for inputs */
+}
+
+/* Button Styles */
+.login-container button {
+    background-color: #406882; /* Warm blue for button */
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+/* Hover effects for buttons */
+.login-container button:hover {
+    background: linear-gradient(135deg, #6497B1, #A7C5EB); /* Blue gradient hover effect */
+}
+
+/* Style for the link to signup */
+.login-container p {
+    margin-top: 20px;
+    color: #2C3E50; /* Soft blue-gray text color */
+    text-align: center;
+}
+
+.login-container a {
+    color: #406882; /* Matching link color with button */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-container a:hover {
+    text-decoration: underline;
+}
